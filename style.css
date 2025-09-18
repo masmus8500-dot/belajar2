@@ -3,7 +3,16 @@
      margin: 0;
      padding: 0;
      background: #f9f9f9;
+     font-family: 'Arial', sans-serif;
+     background: url('laundry2.png') no-repeat center center fixed;
+     background-size: cover;
+     color: #333;
  }
+
+ .font{
+  font-size: 16px; /* default biasanya 16px */
+  text-align: center;
+}
 
  header {
      background: #db349b;
@@ -32,23 +41,24 @@
  }
 
  section {
-     padding: 40px;
+     padding: 10px;
      text-align: center;
  }
 
  .layanan {
      display: flex;
      justify-content: center;
-     gap: 20px;
      flex-wrap: wrap;
+     gap: 20px;
+     background: rgba(255, 255, 255, 0.85);
  }
 
  .card {
      background: white;
-     border-radius: 8px;
+     border-radius: 20px;
      padding: 20px;
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-     width: 250px;
+     width: 300px;
  }
 
  .card h3 {
@@ -88,6 +98,7 @@
      padding: 10px 20px;
      border-radius: 8px;
      transition: 0.3s;
+
  }
 
  .card:hover {
@@ -107,3 +118,44 @@
      background: #2980b9;
      transform: scale(1.1);
  }
+
+/* Tombol WhatsApp */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      cursor: pointer;
+      z-index: 1000;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .whatsapp-button:hover {
+      transform: scale(1.1);
+    }
+.text-center.mb-3
+    {
+     animation: blinkColor 1s infinite;
+ }
+
+ @keyframes blinkColor
+     0% {
+         color: rgb(68, 255, 0);
+     }
+
+     50% {
+         color: rgb(255, 221, 0);
+     }
+
+     100% {
+         color: rgb(255, 0, 0);
+     }
